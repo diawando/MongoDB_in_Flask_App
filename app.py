@@ -19,4 +19,4 @@ def index():
         return redirect(url_for('index'))
     
     all_todos = todos.find()
-    return render_template('index.html')
+    return render_template('index.html', todos=all_todos)
