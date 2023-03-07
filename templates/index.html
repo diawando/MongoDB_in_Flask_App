@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-     <h1>{%block title%} FlaskTODO{% endblock %}</h1>
+     <h1>{% block title %} FlaskTODO {% endblock %}</h1>
      <hr>
      <div class="content">
      <form method="post">
@@ -30,4 +30,5 @@
      <button type="submit">Submit</button>
     </form>
     </div>
-{% block content %}
+
+{% endblock %}
